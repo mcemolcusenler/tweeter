@@ -1,0 +1,34 @@
+section.new-tweet > h2 {
+  border-bottom: 1px solid #000000;
+  text-align: left;
+  margin-left: 0.38em;
+  margin-right: 0.38em;
+  padding-top: 8px;
+}
+
+form {
+  text-align: left;
+  padding: 0.5em;
+  padding-bottom: 0.7em;
+}
+
+textarea {
+  overflow: auto;
+  width: 100%;
+  text-align: left;
+  padding: 0.5em;
+}
+
+.counter {
+  float: right;
+  margin-top: 2px;
+}
+
+.new-tweet {
+  background-color: #eee;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
