@@ -1,7 +1,8 @@
+const charLimit = 140;
 $(document).ready(function() {
   $("form > textarea").on("keyup", function() {
     var charsCount = $(this).val().length;
-    var charsLeft = 140 - charsCount;
+    var charsLeft = charLimit - charsCount;
     var counter = $(this).closest($("form")).find($("span"));
     counter.text(charsLeft);
     if (charsLeft < 0) {

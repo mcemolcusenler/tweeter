@@ -20,13 +20,18 @@ body {
   background-color: #eee;
 }
 
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
 main {
   margin-top: 81px;
   margin-left: auto;
   margin-right: auto;
   width: 450px;
   height: 100vh;
-  text-align: center;
   background-color: white;
   padding-top: 1em;
 }

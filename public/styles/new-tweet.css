@@ -3,6 +3,7 @@ section.new-tweet > h2 {
   text-align: left;
   margin-left: 0.38em;
   margin-right: 0.38em;
+  margin-bottom: 0.1em;
   padding-top: 8px;
 }
 
@@ -14,17 +15,20 @@ form {
 
 textarea {
   overflow: auto;
+  height: 80px;
   width: 100%;
   text-align: left;
   padding: 0.5em;
+  margin-bottom: 0.5em;
+  color: rgb(52, 73, 82);
 }
 
-.counter {
+section span.counter {
   float: right;
   margin-top: 2px;
 }
 
-.counter-red {
+section span.counter-red {
   color: red;
 }
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" />
 
     <!-- Add External Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
@@ -17,6 +18,7 @@
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script src="https://use.fontawesome.com/29c7bb25f3.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
@@ -33,6 +35,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets/" method="POST">
@@ -41,6 +44,25 @@
           <span class="counter">140</span>
         </form>
       </section>
+
+      <section id="all-tweets">
+        <article class="clearfix">
+          <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Macaca_nigra_self-portrait_large.jpg">
+            <p id="monkey">Monkey</p>
+            <p id="lol">@Monkey</p>
+          </header>
+          <p>Hey, I'm a monkey. This is an add-free platform which does limit you to 140 characters. I find it better than Twitter! XD World Domination</p>
+          <footer>
+            <p>10 days ago<p>
+            <i class="fa fa-flag" aria-hidden="true"></i>
+            <i class="fa fa-retweet" aria-hidden="true"></i>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </footer>
+        </article>
+
+      </section>
+
     </main>
 
   </body>
