@@ -24,6 +24,10 @@ textarea {
   margin-top: 2px;
 }
 
+.counter-red {
+  color: red;
+}
+
 .new-tweet {
   background-color: #eee;
   margin-left: 2em;
