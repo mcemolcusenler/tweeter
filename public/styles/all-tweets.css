@@ -85,7 +85,7 @@ article footer i.fa-flag {
   right: 56px;
 }
 
-#monkey {
+header > .user-name {
   display: inline-block;
   margin: auto;
   text-align: center;
@@ -94,7 +94,7 @@ article footer i.fa-flag {
   font-size: 24px;
 }
 
-#lol {
+header > .user-handle {
   display: inline-block;
   float: right;
   margin: auto;
