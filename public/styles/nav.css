@@ -25,3 +25,24 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+#nav-bar button {
+  border: 1px black solid;
+  border-radius: 12px;
+  height: 60px;
+  width: 120px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgb(237, 253, 255);
+  color: rgb(92, 157, 138);
+  font-size: 150%;
+  text-align: center;
+}
+
+#nav-bar button:hover {
+  color: black;
+  background-color: white;
+}
