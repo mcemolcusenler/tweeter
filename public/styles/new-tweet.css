@@ -39,4 +39,5 @@ section span.counter-red {
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 5px;
+  display: none;
 }

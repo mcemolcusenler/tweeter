@@ -5,13 +5,22 @@
  */
 
 $(document).ready(function() {
-
   //prevent the default behaviour of getting redirected when submitting the form
   var $form = $(".new-tweet form");
   var $submitFormButton = $(".new-tweet form input[type=submit]");
-  var $formContent = $(".new-tweet form textarea")
+  var $formContent = $(".new-tweet form textarea");
+  var $counter = $(".counter");
   $($form).submit(function(event) {
     event.preventDefault();
+    //in the if statements below, we're notifying the user if they have no input or more than 140 chars
+    if ($counter.text() == 140) {
+      alert('Ooops, it seems you did not inlcude an input!');
+      return;
+    }
+    if ($counter.text() < 0) {
+      alert('Ooops, it seems you have more than 140 characters!');
+      return;
+    }
     var $testVar = $(this).serialize();
     $.ajax({
       method: "POST",
@@ -20,7 +29,7 @@ $(document).ready(function() {
       success: function(newPost) {
         renderTweet([newPost]);
         $form[0].reset();
-        $(".counter").text('140');
+        $counter.text('140');
       }
     });
   });
@@ -45,7 +54,7 @@ $(document).ready(function() {
     var $userContent = twitObject.content.text;
     var $pContent = $(`<p>${escapeXSS($userContent)}</p>`);
     var $footer = $('<footer>');
-    var $createdAt = twitObject.created_at;
+    var $createdAt = convertToDate(twitObject.created_at); //calls the momentjs function
     var $pCreatedAt = $(`<p>${escapeXSS($createdAt)}</p>`);
     var $iFlag = $('<i class="fa fa-flag" aria-hidden="true"></i>');
     var $iRetweet = $('<i class="fa fa-retweet" aria-hidden="true"></i>');
@@ -79,7 +88,6 @@ $(document).ready(function() {
   //the function below will make a request to /tweets and receive the array of tweets as JSON
 
   var loadTweets = function () {
-    console.log('running loadTweets', $(this));
     $.ajax({
       method: "GET",
       url: "/tweets",
