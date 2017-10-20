@@ -4,7 +4,6 @@ function convertToDate(dateMmStamp) {
   var minutesAgo = moment().diff(dateString, 'minutes');
   var hoursAgo = moment().diff(dateString, 'hours');
   var daysAgo = moment().diff(dateString, 'days');
-  console.log('minutesAgo:', minutesAgo, 'hoursAgo:', hoursAgo, 'daysAgo:', daysAgo);
   if (minutesAgo <= 1) {
     return `around 1 minute ago`;
   } else if (minutesAgo < 60) {

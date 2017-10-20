@@ -1,18 +1,21 @@
 html {
-  box-sizing: border-box; }
-
+  box-sizing: border-box;
+}
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
   color: #244751;
-  background-color: #eee; }
+  background-color: #eee;
+}
 
 .clearfix {
   display: table;
   content: "";
-  clear: both; }
+  clear: both;
+}
 
 main {
   margin-top: 81px;
@@ -21,4 +24,5 @@ main {
   width: 450px;
   height: 100%;
   background-color: white;
-  padding-top: 1em; }
+  padding-top: 1em;
+}

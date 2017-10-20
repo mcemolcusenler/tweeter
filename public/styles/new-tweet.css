@@ -1,43 +1,29 @@
-section.new-tweet > h2 {
-  border-bottom: 1px solid #000000;
-  text-align: left;
-  margin-left: 0.38em;
-  margin-right: 0.38em;
-  margin-bottom: 0.1em;
-  padding-top: 8px;
-}
-
-form {
-  text-align: left;
-  padding: 0.5em;
-  padding-bottom: 0.7em;
-}
-
-textarea {
-  overflow: auto;
-  height: 80px;
-  width: 100%;
-  text-align: left;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-  color: rgb(52, 73, 82);
-}
-
-section span.counter {
-  float: right;
-  margin-top: 2px;
-}
-
-section span.counter-red {
-  color: red;
-}
-
 .new-tweet {
   background-color: #eee;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 2em 20px 2em;
   border-radius: 5px;
-  display: none;
-}
+  display: none; }
+  .new-tweet h2 {
+    border-bottom: 1px solid #000000;
+    text-align: left;
+    margin-left: 0.38em;
+    margin-right: 0.38em;
+    margin-bottom: 0.1em;
+    padding-top: 8px; }
+  .new-tweet form {
+    text-align: left;
+    padding: 0.5em;
+    padding-bottom: 0.7em; }
+    .new-tweet form textarea {
+      overflow: auto;
+      height: 80px;
+      width: 100%;
+      text-align: left;
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+      color: #344952; }
+    .new-tweet form span.counter {
+      float: right;
+      margin-top: 2px; }
+    .new-tweet form span.counter-red {
+      color: red; }

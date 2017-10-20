@@ -1,0 +1,37 @@
+@import 'exports';
+
+.new-tweet {
+  background-color: $defaultColor;
+  margin: 20px 2em 20px 2em;
+  border-radius: 5px;
+  display: none;
+  h2 {
+    border-bottom: 1px solid #000000;
+    text-align: left;
+    margin-left: 0.38em;
+    margin-right: 0.38em;
+    margin-bottom: 0.1em;
+    padding-top: 8px;
+  }
+  form {
+  text-align: left;
+  padding: 0.5em;
+  padding-bottom: 0.7em;
+  textarea {
+    overflow: auto;
+    height: 80px;
+    width: 100%;
+    text-align: left;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    color: rgb(52, 73, 82);
+  }
+  span.counter {
+    float: right;
+    margin-top: 2px;
+  }
+  span.counter-red {
+    color: red;
+  }
+  }
+}

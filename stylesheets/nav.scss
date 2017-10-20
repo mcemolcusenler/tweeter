@@ -8,19 +8,21 @@
   padding-right: 2em;
   height: 80px;
   width: 100%;
-  z-index: 1000; }
-  #nav-bar .logo {
+  z-index: 1000;
+  .logo {
     height: 80px;
     width: 80px;
-    float: left; }
-  #nav-bar .header {
+    float: left;
+  }
+  .header {
     float: left;
     line-height: 2.5em;
     font-size: 200%;
     margin-left: 10px;
     display: inline-block;
-    vertical-align: middle; }
-  #nav-bar button {
+    vertical-align: middle;
+  }
+  button {
     border: 1px black solid;
     border-radius: 12px;
     height: 60px;
@@ -30,10 +32,13 @@
     margin-top: 10px;
     display: inline-block;
     vertical-align: middle;
-    background-color: #edfdff;
-    color: #5c9d8a;
+    background-color: rgb(237, 253, 255);
+    color: rgb(92, 157, 138);
     font-size: 150%;
-    text-align: center; }
-    #nav-bar button:hover {
+    text-align: center;
+    &:hover {
       color: black;
-      background-color: white; }
+      background-color: white;
+    }
+  }
+}
