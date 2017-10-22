@@ -1,17 +1,19 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone. Its purpose was to gain experience with front-end technologies such as HTML, CSS, SASS, JS, jQuery and AJAX. Additionally, Google Fonts, MomentJS and Font Awesome were used in order to enhance the User Experience. On the back-end the project utilizes Node, Express and MongoDB.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
-
-## Getting Started
-
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+Tweeter is an app where Users can send and like tweets. The database keeps track of any changes made to the "likes" of a tweet and renders the page accordingly.
 
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+- Body Parser
+- Chance
+- MongoDB
+- Node SASS Middleware
+- MD5
+
+## Dev Dependencies
+
+-Nodemon
