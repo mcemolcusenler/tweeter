@@ -1,3 +1,4 @@
+//this is a function to calculate how many characters are left
 const charLimit = 140;
 $(document).ready(function() {
   $("form > textarea").on("keyup", function() {

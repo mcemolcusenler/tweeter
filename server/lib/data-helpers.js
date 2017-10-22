@@ -14,7 +14,7 @@ module.exports = function makeDataHelpers(db) {
       db.collection("tweets").find().toArray(callback);
     },
 
-    // Get likes in a tweet and save it to the DB
+    // Get the likes in a tweet and save it to the DB
     saveLikes: function(id, like, object, callback) {
       db.collection("tweets").update(
         {"_id" : ObjectID(`${id}`)},
@@ -26,6 +26,3 @@ module.exports = function makeDataHelpers(db) {
     )}
   };
 }
-
-
-//db.tweets.update({}, {$set:{likes: 0}}, {upsert: false, multi: true})

@@ -1,3 +1,5 @@
+//this file handles the routing
+
 "use strict";
 
 const userHelper    = require("../lib/util/user-helper")
@@ -46,8 +48,7 @@ module.exports = function(DataHelpers) {
     const tweetId = req.params.id;
     const likesObj = req.body.likesObj;
     console.log(tweetId, likesObj, likesObj.likes);
-    if (likesObj.likes == 1) {
-      console.log("we're in 1");
+    if (likesObj.likes == 1) {  //if the likes attribute is 1, we call the saveLikes method w/ the appropriate argument
       DataHelpers.saveLikes(tweetId, 1, likesObj, (err) => {
         if (err) {
           res.status(500).json({ error: err.message});
@@ -55,8 +56,7 @@ module.exports = function(DataHelpers) {
           res.status(200);
         }
       });
-    } else if (likesObj.likes == 0) {
-      console.log("There is a 0 in here");
+    } else if (likesObj.likes == 0) { //if the likes attribute is 0, we call the saveLikes method w/ the appropriate argument
       DataHelpers.saveLikes(tweetId, -1, likesObj, (err) => {
         if (err) {
           res.status(500).json({ error: err.message});

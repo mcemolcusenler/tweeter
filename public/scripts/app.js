@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready(function() {
   //prevent the default behaviour of getting redirected when submitting the form
   var $form = $(".new-tweet form");
@@ -57,7 +51,7 @@ $(document).ready(function() {
     var $createdAt = convertToDate(twitObject.created_at); //calls the momentjs function
     var $pCreatedAt = $(`<p>${escapeXSS($createdAt)}</p>`);
     var $twitID = twitObject["_id"];
-    var $twitLikes = twitObject["likes"];
+    var $twitLikes = twitObject["likes"]; //gets updated by the AJAX post in the end
     var $iFlag = $('<i class="fa fa-flag" aria-hidden="true"></i>');
     var $iRetweet = $('<i class="fa fa-retweet" aria-hidden="true"></i>');
     var $iHeart = $(`<i class="fa fa-heart" aria-hidden="true"></i>`);

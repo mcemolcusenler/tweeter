@@ -1,4 +1,5 @@
 //this will convert to mm stamp into a date format and export it
+//we're using MomentJS
 function convertToDate(dateMmStamp) {
   dateString = moment(dateMmStamp).format("YYYY-MM-DD HH:mm");
   var minutesAgo = moment().diff(dateString, 'minutes');
