@@ -57,6 +57,8 @@
         color: #87c5b7; }
     #all-tweets footer .fa-heart {
       right: 8px; }
+    #all-tweets footer i.red {
+      color: red; }
     #all-tweets footer .fa-retweet {
       right: 32px; }
     #all-tweets footer .fa-flag {

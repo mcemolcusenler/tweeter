@@ -56,9 +56,16 @@ $(document).ready(function() {
     var $footer = $('<footer>');
     var $createdAt = convertToDate(twitObject.created_at); //calls the momentjs function
     var $pCreatedAt = $(`<p>${escapeXSS($createdAt)}</p>`);
+    var $twitID = twitObject["_id"];
+    var $twitLikes = twitObject["likes"];
     var $iFlag = $('<i class="fa fa-flag" aria-hidden="true"></i>');
     var $iRetweet = $('<i class="fa fa-retweet" aria-hidden="true"></i>');
-    var $iHeart = $('<i class="fa fa-heart" aria-hidden="true"></i>');
+    var $iHeart = $(`<i class="fa fa-heart" aria-hidden="true"></i>`);
+    $iHeart.attr('data-id', $twitID);
+    $iHeart.attr('data-likes', $twitLikes);
+    if ($twitLikes == 1) {
+      $iHeart.addClass('red');
+    }
 
     $header.append($image);
     $header.append($pUserName);
