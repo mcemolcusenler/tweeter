@@ -17,3 +17,9 @@ Tweeter is an app where Users can send and like tweets. The database keeps track
 ## Dev Dependencies
 
 -Nodemon
+
+## Screenshots
+
+!["Screenshot of the main page"](https://github.com/mcemolcusenler/tweeter/blob/master/doc/main-page.png)
+!["Screenshot of the slide down compose tweet section"](https://github.com/mcemolcusenler/tweeter/blob/master/doc/compose-tweet.png)
+!["Screenshot of the tweet composed in the previous image being appended to the main section"](https://github.com/mcemolcusenler/tweeter/blob/master/doc/display-tweet.png)
